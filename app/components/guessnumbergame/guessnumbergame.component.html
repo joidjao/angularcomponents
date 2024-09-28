@@ -1,0 +1,8 @@
+<div>
+    <h3>Guess the Number Game</h3>
+    <input type="number" [(ngModel)]="guess" placeholder="Enter your guess">
+    <button (click)="checkGuess()">Check Guess</button>
+    <p *ngIf="message">{{ message }}</p>
+    <button (click)="resetGame()">Reset Game</button>
+  </div>
+  

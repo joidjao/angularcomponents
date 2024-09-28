@@ -1,0 +1,11 @@
+<div>
+    <label for="amount">Enter amount:</label>
+    <input type="number" [(ngModel)]="amount" id="amount" />
+  
+    <button (click)="formatCurrency('USD')">Format as USD</button>
+    <button (click)="formatCurrency('PHP')">Format as PHP</button>
+    <button (click)="formatCurrency('EUR')">Format as EUR</button>
+  
+    <p>Formatted amount: {{ formattedCurrency }}</p>
+  </div>
+  

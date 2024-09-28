@@ -1,0 +1,7 @@
+<div>
+    <h3>Show Username</h3>
+    <input type="text" [(ngModel)]="username" placeholder="Enter your username">
+    <button (click)="showUsername()">Show Username</button>
+    <p *ngIf="displayedUsername">Hello, {{ displayedUsername }}!</p>
+  </div>
+  
