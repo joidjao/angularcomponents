@@ -1,0 +1,6 @@
+<div>
+    <input type="number" [(ngModel)]="length" placeholder="Enter length"/>
+    <input type="number" [(ngModel)]="width" placeholder="Enter width"/>
+    <button (click)="calculateArea()">Calculate Area</button>
+    <p *ngIf="area !== null">Area: {{ area }} sq. units</p>
+</div>    

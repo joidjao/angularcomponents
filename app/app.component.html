@@ -1,10 +1,102 @@
-<a routerLink="/"><h1>Homepage</h1></a>
-<br>
-<a routerLink="/"><h1>Login</h1></a>
-<br>
-<a routerLink="/"><h1>Sign Up</h1></a>
-<br>
-<a routerLink="/"><h1>Landing Page</h1></a>
-<br>
+<div>
+    <h1>Angular Components Showcase</h1>
 
-<router-outlet></router-outlet>
+    <ul>
+      <li><a href="#" (click)="selectedComponent = 'DisplayHelloWorld'">Display Hello World</a></li>
+      <li><a href="#" (click)="selectedComponent = 'ShowHelloButton'">Show Hello Button</a></li>
+      <li><a href="#" (click)="selectedComponent = 'DisplayName'">Display Name</a></li>
+      <li><a href="#" (click)="selectedComponent = 'Counter'">Counter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'SimpleForm'">Simple Form</a></li>
+      <li><a href="#" (click)="selectedComponent = 'UserAge'">User Age</a></li>
+      <li><a href="#" (click)="selectedComponent = 'UserGreeting'">User Greeting</a></li>
+      <li><a href="#" (click)="selectedComponent = 'Calculator'">Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'TextLength'">Text Length</a></li>
+      <li><a href="#" (click)="selectedComponent = 'CurrencyConverter'">Currency Converter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'EvenOddChecker'">Even Odd Checker</a></li>
+      <li><a href="#" (click)="selectedComponent = 'WordReverser'">Word Reverser</a></li>
+      <li><a href="#" (click)="selectedComponent = 'ShowDate'">Show Date</a></li>
+      <li><a href="#" (click)="selectedComponent = 'ShowUsername'">Show Username</a></li>
+      <li><a href="#" (click)="selectedComponent = 'MultiplicationTable'">Multiplication Table</a></li>
+      <li><a href="#" (click)="selectedComponent = 'SimpleLogin'">Simple Login</a></li>
+      <li><a href="#" (click)="selectedComponent = 'FahrenheitToCelsius'">Fahrenheit to Celsius</a></li>
+      <li><a href="#" (click)="selectedComponent = 'BookmarkList'">Bookmark List</a></li>
+      <li><a href="#" (click)="selectedComponent = 'CharacterCounter'">Character Counter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'PalindromeChecker'">Palindrome Checker</a></li>
+      <li><a href="#" (click)="selectedComponent = 'TemperatureConverter'">Temperature Converter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'ShoppingList'">Shopping List</a></li>
+      <li><a href="#" (click)="selectedComponent = 'FactorialCalculator'">Factorial Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'TodoManager'">ToDo Manager</a></li>
+      <li><a href="#" (click)="selectedComponent = 'GuessNumberGame'">Guess Number Game</a></li>
+      <li><a href="#" (click)="selectedComponent = 'WordCounter'">Word Counter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'RandomNumberGenerator'">Random Number Generator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'MultiplicationChecker'">Multiplication Checker</a></li>
+      <li><a href="#" (click)="selectedComponent = 'UppercaseConverter'">Uppercase Converter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'WordShuffler'">Word Shuffler</a></li>
+      <li><a href="#" (click)="selectedComponent = 'CompoundInterestCalculator'">Compound Interest Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'FibonacciGenerator'">Fibonacci Generator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'OddSumCalculator'">Odd Sum Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'CurrencyFormatter'">Currency Formatter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'RandomQuoteDisplay'">Random Quote Display</a></li>
+      <li><a href="#" (click)="selectedComponent = 'UppercaseGreeting'">Uppercase Greeting</a></li>
+      <li><a href="#" (click)="selectedComponent = 'DivisibleChecker'">Divisible Checker</a></li>
+      <li><a href="#" (click)="selectedComponent = 'EmailValidator'">Email Validator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'AreaCalculator'">Area Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'LengthConverter'">Length Converter</a></li>
+      <li><a href="#" (click)="selectedComponent = 'EmailObfuscator'">Email Obfuscator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'DayOfWeekDisplay'">Day Of Week Display</a></li>
+      <li><a href="#" (click)="selectedComponent = 'PercentCalculator'">Percent Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'PrimeChecker'">Prime Checker</a></li>
+      <li><a href="#" (click)="selectedComponent = 'CubeCalculator'">Cube Calculator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'RandomColorGenerator'">Random Color Generator</a></li>
+      <li><a href="#" (click)="selectedComponent = 'GradeCalculator'">Grade Calculator</a></li>
+    </ul>
+  
+    <app-displayhelloworld *ngIf="selectedComponent === 'DisplayHelloWorld'"></app-displayhelloworld>
+    <app-showhellobutton *ngIf="selectedComponent === 'ShowHelloButton'"></app-showhellobutton>
+    <app-displayname *ngIf="selectedComponent === 'DisplayName'"></app-displayname>
+    <app-counter *ngIf="selectedComponent === 'Counter'"></app-counter>
+    <app-simpleform *ngIf="selectedComponent === 'SimpleForm'"></app-simpleform>
+    <app-userage *ngIf="selectedComponent === 'UserAge'"></app-userage>
+    <app-usergreeting *ngIf="selectedComponent === 'UserGreeting'"></app-usergreeting>
+    <app-calculator *ngIf="selectedComponent === 'Calculator'"></app-calculator>
+    <app-textlength *ngIf="selectedComponent === 'TextLength'"></app-textlength>
+    <app-currencyconverter *ngIf="selectedComponent === 'CurrencyConverter'"></app-currencyconverter>
+    <app-evenoddchecker *ngIf="selectedComponent === 'EvenOddChecker'"></app-evenoddchecker>
+    <app-wordreverser *ngIf="selectedComponent === 'WordReverser'"></app-wordreverser>
+    <app-showdate *ngIf="selectedComponent === 'ShowDate'"></app-showdate>
+    <app-showusername *ngIf="selectedComponent === 'ShowUsername'"></app-showusername>
+    <app-multiplicationtable *ngIf="selectedComponent === 'MultiplicationTable'"></app-multiplicationtable>
+    <app-simplelogin *ngIf="selectedComponent === 'SimpleLogin'"></app-simplelogin>
+    <app-fahrenheittocelsius *ngIf="selectedComponent === 'FahrenheitToCelsius'"></app-fahrenheittocelsius>
+    <app-bookmarklist *ngIf="selectedComponent === 'BookmarkList'"></app-bookmarklist>
+    <app-charactercounter *ngIf="selectedComponent === 'CharacterCounter'"></app-charactercounter>
+    <app-palindromechecker *ngIf="selectedComponent === 'PalindromeChecker'"></app-palindromechecker>
+    <app-temperatureconverter *ngIf="selectedComponent === 'TemperatureConverter'"></app-temperatureconverter>
+    <app-shoppinglist *ngIf="selectedComponent === 'ShoppingList'"></app-shoppinglist>
+    <app-factorialcalculator *ngIf="selectedComponent === 'FactorialCalculator'"></app-factorialcalculator>
+    <app-todomanager *ngIf="selectedComponent === 'TodoManager'"></app-todomanager>
+    <app-guessnumbergame *ngIf="selectedComponent === 'GuessNumberGame'"></app-guessnumbergame>
+    <app-wordcounter *ngIf="selectedComponent === 'WordCounter'"></app-wordcounter>
+    <app-randomnumbergenerator *ngIf="selectedComponent === 'RandomNumberGenerator'"></app-randomnumbergenerator>
+    <app-multiplicationchecker *ngIf="selectedComponent === 'MultiplicationChecker'"></app-multiplicationchecker>
+    <app-uppercaseconverter *ngIf="selectedComponent === 'UppercaseConverter'"></app-uppercaseconverter>
+    <app-wordshuffler *ngIf="selectedComponent === 'WordShuffler'"></app-wordshuffler>
+    <app-compoundinterestcalculator *ngIf="selectedComponent === 'CompoundInterestCalculator'"></app-compoundinterestcalculator>
+    <app-fibonaccigenerator *ngIf="selectedComponent === 'FibonacciGenerator'"></app-fibonaccigenerator>
+    <app-oddsumcalculator *ngIf="selectedComponent === 'OddSumCalculator'"></app-oddsumcalculator>
+    <app-currencyformatter *ngIf="selectedComponent === 'CurrencyFormatter'"></app-currencyformatter>
+    <app-randomquotedisplay *ngIf="selectedComponent === 'RandomQuoteDisplay'"></app-randomquotedisplay>
+    <app-uppercasegreeting *ngIf="selectedComponent === 'UppercaseGreeting'"></app-uppercasegreeting>
+    <app-divisiblechecker *ngIf="selectedComponent === 'DivisibleChecker'"></app-divisiblechecker>
+    <app-emailvalidator *ngIf="selectedComponent === 'EmailValidator'"></app-emailvalidator>
+    <app-areacalculator *ngIf="selectedComponent === 'AreaCalculator'"></app-areacalculator>
+    <app-lengthconverter *ngIf="selectedComponent === 'LengthConverter'"></app-lengthconverter>
+    <app-emailobfuscator *ngIf="selectedComponent === 'EmailObfuscator'"></app-emailobfuscator>
+    <app-dayofweekdisplay *ngIf="selectedComponent === 'DayOfWeekDisplay'"></app-dayofweekdisplay>
+    <app-percentcalculator *ngIf="selectedComponent === 'PercentCalculator'"></app-percentcalculator>
+    <app-primechecker *ngIf="selectedComponent === 'PrimeChecker'"></app-primechecker>
+    <app-cubecalculator *ngIf="selectedComponent === 'CubeCalculator'"></app-cubecalculator>
+    <app-randomcolorgenerator *ngIf="selectedComponent === 'RandomColorGenerator'"></app-randomcolorgenerator>
+    <app-gradecalculator *ngIf="selectedComponent === 'GradeCalculator'"></app-gradecalculator>
+  </div>
+  

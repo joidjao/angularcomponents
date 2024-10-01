@@ -1,0 +1,5 @@
+<div>
+    <input type="number" [(ngModel)]="number" placeholder="Enter number" />
+    <button (click)="calculateCube()">Calculate Cube</button>
+    <p *ngIf="cube !== null">The cube of {{ number }} is {{ cube }}</p>
+</div>    

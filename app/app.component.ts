@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my_angular';
-}
+  title = 'Angular Components Showcase';
 
+  selectedComponent: string = '';
+
+}

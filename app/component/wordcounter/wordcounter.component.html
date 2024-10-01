@@ -1,0 +1,6 @@
+<div>
+    <h2>Word Counter</h2>
+    <textarea [(ngModel)]="inputText" rows="4" placeholder="Enter your text here"></textarea>
+    <button (click)="countWords()">Count Words</button>
+    <p>Word count: {{ wordCount }}</p>
+</div>

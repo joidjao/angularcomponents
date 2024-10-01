@@ -1,0 +1,5 @@
+<div>
+    <input type="number" [(ngModel)]="score" placeholder="Enter score" />
+    <button (click)="calculateGrade()">Calculate Grade</button>
+    <p *ngIf="grade">Your grade is {{ grade }}</p>
+</div>    

@@ -1,0 +1,5 @@
+<div>
+    <input type="number" [(ngModel)]="meters" placeholder="Enter length in meters"/>
+    <button (click)="convertToKilometers()">Convert to Kilometers</button>
+    <p *ngIf="kilometers !== null">Length: {{ kilometers }} km</p>
+</div>    

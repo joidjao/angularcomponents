@@ -1,0 +1,5 @@
+<div>
+    <input type="email" [(ngModel)]="email" placeholder="Enter email"/>
+    <button (click)="obfuscateEmail()">Obfuscate Email</button>
+    <p *ngIf="obfuscatedEmail">Obfuscated: {{ obfuscatedEmail }}</p>
+</div>    

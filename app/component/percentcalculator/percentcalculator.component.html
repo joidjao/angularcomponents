@@ -1,0 +1,6 @@
+<div>
+    <input type="number" [(ngModel)]="total" placeholder="Enter total value"/>
+    <input type="number" [(ngModel)]="percentage" placeholder="Enter percentage"/>
+    <button (click)="calculatePercentage()">Calculate Percentage</button>
+    <p *ngIf="result !== null">Result: {{ result }}</p>
+</div>    
